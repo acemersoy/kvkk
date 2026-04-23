@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Atlas - Gizlilik Politikası</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --accent-color: #2563eb;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --pulse-color: rgba(37, 99, 235, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            background-image: 
+                radial-gradient(circle at 2px 2px, var(--border-color) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background: var(--accent-color);
+            border-radius: 20px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 99, 235, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            font-size: 3rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: #0f172a;
+        }
+
+        .last-update {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            color: var(--accent-color);
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-color);
+            border-radius: 3px;
+            margin-right: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        li {
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        li::after {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .contact-box {
+            background: #f1f5f9;
+            padding: 32px;
+            border-radius: 20px;
+            margin-top: 40px;
+            border: 1px dashed var(--border-color);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container { margin: 30px auto; }
+            .content-card { padding: 30px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-placeholder">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                </svg>
+            </div>
+            <h1>Radio Atlas</h1>
+            <p class="last-update">Son Güncelleme: 23 Nisan 2026</p>
+        </header>
+
+        <main class="content-card">
+            <section>
+                <h2>Giriş</h2>
+                <p>Radio Atlas ("Uygulama") olarak, dünya genelindeki radyo istasyonlarını keşfederken gizliliğinizi korumayı taahhüt ediyoruz. Bu politika, uygulamamızı kullandığınızda verilerinizin nasıl işlendiğini şeffaf bir şekilde açıklar.</p>
+            </section>
+
+            <section>
+                <h2>1. Veri Sorumlusu</h2>
+                <p>Bu uygulama kapsamında işlenen verilerden aşağıdaki kişi/kuruluş sorumludur:</p>
+                <ul>
+                    <li><strong>Geliştirici:</strong> Avni Cem Ersoy</li>
+                    <li><strong>E-posta:</strong> mysteriaceproducts@gmail.com</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. İşlenen Veriler</h2>
+                <p>Uygulamamız gizlilik odaklıdır ve minimum veri prensibiyle çalışır:</p>
+                <ul>
+                    <li><strong>Yerel Veriler:</strong> Favori istasyonlarınız ve Quiz puanlarınız yalnızca cihazınızdaki güvenli yerel veritabanında (Room) saklanır. Bu veriler sunucularımıza iletilmez.</li>
+                    <li><strong>Teknik Veriler:</strong> Radyo yayınlarını dinleyebilmeniz için IP adresiniz geçici olarak yayın sunucularına iletilebilir.</li>
+                    <li><strong>Konum Bilgisi:</strong> Harita üzerinde radyo istasyonlarını göstermek için yaklaşık konumunuz Google Maps SDK tarafından işlenebilir.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Üçüncü Taraf Hizmetler</h2>
+                <p>Uygulama, işlevselliğini sağlamak için güvenilir üçüncü taraf sağlayıcılarla entegre çalışır:</p>
+                <ul>
+                    <li><strong>Google Maps:</strong> Harita görüntüleme için kullanılır. Google'ın gizlilik politikası geçerlidir.</li>
+                    <li><strong>Radio Browser API:</strong> Radyo listelerini sağlamak için kullanılan açık kaynaklı bir topluluk servisidir.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Kullanılan İzinler</h2>
+                <p>Uygulama aşağıdaki Android izinlerini temel işlevler için kullanır:</p>
+                <ul>
+                    <li><strong>İnternet:</strong> Yayın akışı ve harita yükleme.</li>
+                    <li><strong>Ön Plan Servisi:</strong> Arka planda kesintisiz radyo dinleme.</li>
+                    <li><strong>Bildirimler:</strong> Oynatıcı kontrollerini kilit ekranında gösterme.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. Haklarınız</h2>
+                <p>KVKK ve GDPR kapsamında, cihazınızdaki verileri dilediğiniz zaman uygulama ayarlarından temizleme veya uygulamayı silerek tüm yerel verilerinizi yok etme hakkına sahipsiniz.</p>
+            </section>
+
+            <div class="contact-box">
+                <p><strong>Sorularınız mı var?</strong></p>
+                <p>Gizlilik politikamızla ilgili her türlü soru için bize ulaşabilirsiniz:</p>
+                <p><a href="mailto:mysteriaceproducts@gmail.com">mysteriaceproducts@gmail.com</a></p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            &copy; 2026 Radio Atlas. Tüm hakları saklıdır.
+        </footer>
+    </div>
+
+</body>
+</html>
